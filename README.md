@@ -62,7 +62,7 @@
 
 ## 📄 开源协议
 
-[MIT License](https://opensource.org/licenses/MIT)
+[MIT License](./LICENSE))
 
 > ⚠️ **免责声明与使用限制**
 > 
