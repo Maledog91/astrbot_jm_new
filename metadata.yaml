@@ -2,7 +2,7 @@ name: astrbot_jm_new
 display_name: 小祥找本
 short_desc: 支持识图与关键词检索，带防风控机制的本子资源私发工具。
 desc: 基于 AstrBot 的多章节图片解析与下载工具。具备临时会话防风控私发、超长图拼接与合并转发功能。
-version: v1.0.1
+version: v1.0.2
 author: 蓝色健达奇趣蛋
 repo: https://github.com/Maledog91/astrbot_jm_new
 support_platforms:
