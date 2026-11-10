@@ -14,7 +14,7 @@
     <a href="https://github.com/hect0x7/JMComic-Crawler-Python" target="_blank"><img src="https://img.shields.io/badge/Core-JMComic-red?style=flat-square" alt="JMComic"></a>
     <a href="https://github.com/Maledog91/astrbot_jm_new/releases" target="_blank"><img src="https://img.shields.io/badge/Version-v1.0.0-green?style=flat-square" alt="Version"></a>
     <a href="./LICENSE" target="_blank"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="License"></a>
-    <img src="https://img.shields.io/badge/Status-Beta-yellow?style=flat-square" alt="Status">
+    <a href="https://github.com/Maledog91/astrbot_jm_new/issues" target="_blank"><img src="https://img.shields.io/badge/Status-Beta-yellow?style=flat-square" alt="Status"></a>
   </p>
 
   <br>
