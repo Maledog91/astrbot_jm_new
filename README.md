@@ -12,7 +12,7 @@
     <a href="https://github.com/AstrBotDevs/AstrBot" target="_blank"><img src="https://img.shields.io/badge/AstrBot-Plugin-orange?style=flat-square" alt="AstrBot"></a>
     <a href="https://www.python.org/" target="_blank"><img src="https://img.shields.io/badge/Python-3.10+-blue?style=flat-square&logo=python&logoColor=white" alt="Python"></a>
     <a href="https://github.com/hect0x7/JMComic-Crawler-Python" target="_blank"><img src="https://img.shields.io/badge/Core-JMComic-red?style=flat-square" alt="JMComic"></a>
-    <a href="https://github.com/Maledog91/astrbot_jm_new/releases" target="_blank"><img src="https://img.shields.io/badge/Version-v1.0.0-green?style=flat-square" alt="Version"></a>
+    <a href="https://github.com/Maledog91/astrbot_jm_new/releases" target="_blank"><img src="https://img.shields.io/badge/Version-v1.0.1-green?style=flat-square" alt="Version"></a>
     <a href="./LICENSE" target="_blank"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="License"></a>
     <a href="https://github.com/Maledog91/astrbot_jm_new/issues" target="_blank"><img src="https://img.shields.io/badge/Status-Beta-yellow?style=flat-square" alt="Status"></a>
   </p>
@@ -84,15 +84,6 @@
 
 - 感谢 **路过的复读姬** 和 **谷Eileen** 提供的技术与灵感。
 - **特别感谢 [JMComic-Crawler-Python](https://github.com/hect0x7/JMComic-Crawler-Python) 提供的极其强大且稳定的底层 API 支持，没有这个库，本插件根本无法运行。**
-
-## 📝 更新日志
-
-### v1.0.0 (初版发布)
-- 实现基础的识图与文字搜本功能。
-- 实现多章节严格排序、长图垂直拼接与合并转发发送。
-- 引入本地路径直发与会话预热机制，大幅降低临时会话被吞包的概率。
-- 引入全局白名单与禁用群机制。
-- 支持向 AI 大模型传递自定义场景，完美结合 AstrBot 人格设定。
 
 ## 📄 开源协议
 
