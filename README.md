@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./logo.png" width="160" alt="小祥找本 Logo" style="border-radius: 20px;">
+  <img src="https://raw.githubusercontent.com/Maledog91/astrbot_jm_new/main/logo.png" width="160" alt="小祥找本 Logo" style="border-radius: 20px;">
   <h1>小祥找本 (AstrBot 插件)</h1>
   
   <p>基于 AstrBot 框架与 JMComic 官方底层库的搜本/下本插件。</p>
