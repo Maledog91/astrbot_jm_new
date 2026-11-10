@@ -12,7 +12,7 @@
     <a href="https://github.com/AstrBotDevs/AstrBot" target="_blank"><img src="https://img.shields.io/badge/AstrBot-Plugin-orange?style=flat-square" alt="AstrBot"></a>
     <a href="https://www.python.org/" target="_blank"><img src="https://img.shields.io/badge/Python-3.10+-blue?style=flat-square&logo=python&logoColor=white" alt="Python"></a>
     <img src="https://img.shields.io/badge/Core-Engine-red?style=flat-square" alt="Engine">
-    <a href="https://github.com/Maledog91/astrbot_jm_new/releases" target="_blank"><img src="https://img.shields.io/badge/Version-v1.0.1-green?style=flat-square" alt="Version"></a>
+    <a href="https://github.com/Maledog91/astrbot_jm_new/releases" target="_blank"><img src="https://img.shields.io/badge/Version-v1.0.2-green?style=flat-square" alt="Version"></a>
     <a href="./LICENSE" target="_blank"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="License"></a>
     <a href="https://github.com/Maledog91/astrbot_jm_new/issues" target="_blank"><img src="https://img.shields.io/badge/Status-Beta-yellow?style=flat-square" alt="Status"></a>
   </p>
