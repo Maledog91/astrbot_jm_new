@@ -82,7 +82,7 @@
 | 资源 | 说明 |
 | :--- | :--- |
 | **[JMComic-Crawler-Python](https://github.com/hect0x7/JMComic-Crawler-Python)** | **本项目核心依赖库，所有 JM 接口、下载与解析功能的上游** |
-| [AstrBot 官方文档](https://astrbot.soulter.top/) | 机器人框架使用与配置指南 |
+| [AstrBot 官方文档](https://docs.astrbot.app) | 机器人框架使用与配置指南 |
 | [Soutubot](https://soutubot.moe/) | 提供免费的图片搜索接口 |
 
 ## 🙏 致谢
