@@ -1,7 +1,7 @@
 name: astrbot_jm_new
 display_name: 小祥找本
-short_desc: 支持识图找本、临时会话防风控私发、多章节长图合并转发的 JM 插件。
-desc: 基于 AstrBot 的禁漫（JM）搜本与下本插件。深度依赖 JMComic-Crawler-Python 官方底层库，在保证搜本准确率的同时，创新性地引入了群聊触发与临时会话私发，以及本地路径直发机制，尽最大可能规避腾讯风控，保证机器人存活。
+short_desc: 支持识图与文字搜本，临时会话防风控私发的 JM 插件。
+desc: 支持识图与文字搜本的 JM 插件，具备临时会话防风控私发与多章节长图合并转发功能。
 version: v1.0.0
 author: 蓝色健达奇趣蛋
 repo: https://github.com/Maledog91/astrbot_jm_new
