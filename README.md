@@ -1,7 +1,11 @@
+# 🔗 小祥找本 (AstrBot 插件)
+
 <div align="center">
-  <img src="./logo.png" width="180" alt="小祥找本 Logo" style="border-radius: 20px;">
-  <h1>小祥找本 (AstrBot 插件)</h1>
-  <p><strong>版本：v1.0.0</strong></p>
+  <img src="./logo.png" width="220" alt="小祥找本 Logo" style="border-radius: 15px;">
+</div>
+
+<div align="center">
+  <strong>版本：v1.0.0</strong>
 </div>
 
 基于 AstrBot 框架和 `jmcomic` 库开发的禁漫（JM）搜本、下本插件。支持深度定制的人格拒绝提示、防封控发送、多章节合并转发以及精准的识图搜本。
