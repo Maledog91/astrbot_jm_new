@@ -24,7 +24,7 @@ except ImportError:
 
 CACHE_DIR = Path("data/plugin_data/astrbot_jm_new/cache").absolute()
 
-@register("astrbot_jm_new", "X", "小祥找本", "v1.0.1")
+@register("astrbot_jm_new", "X", "小祥找本", "v1.0.2")
 class XiaoXiangJM(Star):
     def __init__(self, context: Context, config: dict = None):
         super().__init__(context)
