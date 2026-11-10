@@ -1,6 +1,11 @@
 name: astrbot_jm_new
 display_name: 小祥找本
-desc: 识图/文字搜本与多章节下载，临时会话防风控私发。
-author: 蓝色健达奇趣蛋
+desc: 基于 AstrBot 的 JM 搜本/下本插件，支持识图找本、临时会话防风控私发、多章节长图合并转发。
 version: v1.0.0
-repo: "https://github.com/Maledog91/astrbot_jm_new"
+author: 蓝色健达奇趣蛋
+repo: https://github.com/Maledog91/astrbot_jm_new
+tags:
+  - jm
+  - 搜本
+  - 下本
+  - 识图
