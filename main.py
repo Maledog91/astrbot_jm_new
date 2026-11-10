@@ -22,7 +22,6 @@ try:
 except ImportError:
     PILImage = None
 
-# 【绝对路径】确保 NapCat 能找到文件，同时符合数据区规范
 CACHE_DIR = Path("data/plugin_data/astrbot_jm_new/cache").absolute()
 
 @register("astrbot_jm_new", "X", "小祥找本", "v1.0.1")
@@ -191,7 +190,6 @@ class XiaoXiangJM(Star):
             logger.error(f"拼接长图失败: {e}")
             return False
 
-    # 【绝对没碰的图片排序逻辑】
     def download_single_chapter(self, option, photo_id, temp_dir):
         option.dir_rule.base_dir = str(temp_dir)
         try: 
@@ -301,10 +299,13 @@ class XiaoXiangJM(Star):
                 
                 try:
                     from jmcomic import JmOption
-                    option = JmOption.default()
-                    client = option.new_jm_client()
                     
-                    album_detail = await asyncio.to_thread(client.get_album_detail, album_id)
+                    def fetch_album_info(aid):
+                        opt = JmOption.default()
+                        cli = opt.new_jm_client()
+                        return opt, cli, cli.get_album_detail(aid)
+                        
+                    option, client, album_detail = await asyncio.to_thread(fetch_album_info, album_id)
                     episodes = album_detail.episode_list
                     
                     if not episodes:
@@ -524,7 +525,10 @@ class XiaoXiangJM(Star):
                     yield event.plain_result("❌ 无法读取图片数据。")
                     return
                 ts = int(time.time())
-                api_key = base64.b64encode(str(ts * ts + len(self.ua) ** 2 + 3331358690401).encode()).decode()[::-1].replace("=", "")
+                
+                soutubot_sig = str(ts * ts + len(self.ua) ** 2 + 3331358690401)
+                api_key = base64.b64encode(soutubot_sig.encode()).decode()[::-1].replace("=", "")
+                
                 res_json = None
                 for attempt in range(3):
                     try:
