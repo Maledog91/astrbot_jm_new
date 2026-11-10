@@ -1,73 +1,81 @@
 <div align="center">
-  <img src="./logo.png" width="180" alt="小祥找本 Logo" style="border-radius: 20px;">
+  <img src="./logo.png" width="160" alt="小祥找本 Logo" style="border-radius: 20px;">
   <h1>小祥找本 (AstrBot 插件)</h1>
   
-  <!-- 小徽章区域 -->
+  <p>基于 AstrBot 框架与 JMComic 官方底层库的搜本/下本插件。</p>
+  <p>支持识图找本、临时会话防风控私发、多章节长图合并转发。</p>
+
+  <br>
+
+  <!-- 徽章墙 - 第一层 -->
   <p>
-    <a href="https://github.com/Maledog91/astrbot_jm_new/stargazers"><img src="https://img.shields.io/github/stars/Maledog91/astrbot_jm_new?style=for-the-badge&logo=github&color=gold" alt="Stars"></a>
-    <a href="https://github.com/Maledog91/astrbot_jm_new/network/members"><img src="https://img.shields.io/github/forks/Maledog91/astrbot_jm_new?style=for-the-badge&logo=github" alt="Forks"></a>
-    <img src="https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-    <a href="./LICENSE"><img src="https://img.shields.io/github/license/Maledog91/astrbot_jm_new?style=for-the-badge" alt="License"></a>
-    <img src="https://img.shields.io/badge/AstrBot-Plugin-orange?style=for-the-badge" alt="AstrBot">
+    <img src="https://img.shields.io/badge/AstrBot-Plugin-orange?style=flat-square" alt="AstrBot">
+    <img src="https://img.shields.io/badge/Python-3.10+-blue?style=flat-square&logo=python&logoColor=white" alt="Python">
+    <img src="https://img.shields.io/badge/Core-JMComic-red?style=flat-square" alt="JMComic">
   </p>
 
-  <p><strong>版本：v1.0.0</strong></p>
+  <!-- 徽章墙 - 第二层 -->
+  <p>
+    <img src="https://img.shields.io/badge/Version-v1.0.0-green?style=flat-square" alt="Version">
+    <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="License"></a>
+    <img src="https://img.shields.io/badge/Status-Beta-yellow?style=flat-square" alt="Status">
+  </p>
+
+  <br>
+
+  <!-- 快捷导航 -->
+  <p>
+    <a href="#-功能特性">功能特性</a> ·
+    <a href="#-安装与使用方法">安装与使用方法</a> ·
+    <a href="#-核心依赖与资源">核心依赖</a> ·
+    <a href="#-重要注意事项">注意事项</a> ·
+    <a href="#-开源协议">开源协议</a>
+  </p>
 </div>
 
-**小祥找本** 是一款基于 [AstrBot](https://github.com/AstrBotDevs/AstrBot) 框架，并**深度依赖 [JMComic-Crawler-Python](https://github.com/hect0x7/JMComic-Crawler-Python) 官方底层库**开发的禁漫（JM）搜本、下本插件。
+---
 
-支持深度定制的人格拒绝提示、防封控发送、多章节合并转发以及精准的识图搜本。
+## 📖 项目简介
+
+**小祥找本** 是一个运行在 AstrBot 框架上的禁漫（JM）搜本与下本插件。
+
+市面上的插件往往因频繁发图导致机器人被封号，或者搜图结果混乱不堪。本项目深度依赖强大的 **[JMComic-Crawler-Python](https://github.com/hect0x7/JMComic-Crawler-Python)** 官方底层库，在保证搜本准确率的同时，创新性地引入了**“群聊触发，临时会话私发”**和**“本地路径直发”**机制，尽最大可能规避腾讯风控，保证机器人存活。
 
 ## ✨ 功能特性
 
-- **🔍 智能识图搜本**：支持多重括号剥离、日文优先提取。自带 50% 相似度阈值拦截，低于该值不显示，防止污染结果。
+- **🔍 智能识图搜本**：接入 Soutubot API，支持多重括号剥离、日文优先提取。自带 50% 相似度阈值拦截，低于该值不显示，防止污染结果。
 - **📝 文字精准搜本**：支持纯数字、JM号、关键词等模糊搜索，剔除严苛的相似度校验，繁简日文均可搜。
 - **📥 多章节全本私发下载**：
-  - **群聊触发，私聊收取**：在群聊中发送下本指令后，机器人会自动拉取**群临时会话**（或私聊），将完整的本子以**合并转发（聊天记录）**的形式发送到你的私人聊天框中。
+  - **群聊触发，私聊收取**：发送下本指令后，机器人自动拉取**群临时会话**（或私聊），将完整的本子以**合并转发（聊天记录）**形式发送。
   - **严格顺序**：完全遵循 API 的 `episode_list` 顺序，杜绝“番外”乱序；单章内图片按文件名数字自然排序。
   - **超长图拼接**：每 10 页垂直拼接为一张超长图，画质高清（1080p）且体积优化。
   - **本地路径直发**：绕过 Base64 转换，直接让协议端读取本地文件，极大降低因数据包过大被风控吞包的概率。
-  - **会话预热机制**：群聊私发前自动发送文字预热（“正在发送聊天记录...”），激活临时会话通道后再发合并转发，防止被腾讯静默拦截。
+  - **会话预热机制**：群聊私发前自动发送文字预热，激活临时会话通道后再发合并转发。
 - **🛡️ 全局拦截与权限**：
-  - **全局白名单**：开启后，不在名单内的用户无法使用任何插件功能（群聊和私聊均拦截）。
+  - **全局白名单**：开启后，不在名单内的用户无法使用任何插件功能。
   - **全局禁用群**：群号在黑名单中时，搜本、识图、下本全部禁用。
   - **并发控制**：内置全局互斥锁，防止多人同时下本导致服务器 CPU 100% 或 QQ 风控。
 - **🤖 深度结合 AI 人格**：
-  - 拒绝提示不再硬编码“高傲”语气，而是将“场景描述”直接发给大模型。
-  - 完美配合用户在 AstrBot WebUI 中配置的专属人格设定，让 AI 以该人格演绎拒绝。
+  - 拒绝提示不再硬编码，而是将“场景描述”发给大模型，完美配合你设置的专属人格。
 
 ## 🚀 安装与使用方法
 
 1. **安装插件**：
-   在 AstrBot WebUI 的“插件管理”中，点击“从 URL 安装”，填入本仓库链接：`https://github.com/Maledog91/astrbot_jm_new`，等待拉取完成并重载插件即可。
+   在 AstrBot WebUI 的“插件管理”中，点击“从 URL 安装”，填入本仓库链接：`https://github.com/Maledog91/astrbot_jm_new`，等待拉取完成并重载。
 2. **配置设置**：
-   在 AstrBot WebUI 的“插件管理”中找到“小祥找本”，点击配置，根据自身需求设置指令别名、白名单、禁用群以及 AI 拒绝场景。
+   在 AstrBot WebUI 中点击“小祥找本”的配置，根据需求设置指令别名、白名单、禁用群以及 AI 拒绝场景。
 3. **使用指令**：
-   - **文字搜本**：发送 `小祥搜本 <关键词>` （可搜名称或 JM 号）。
-   - **识图搜本**：引用一张图片，发送 `小祥找本`。
-   - **下载本子**：引用机器人返回的搜本结果，发送 `小祥下本`；或直接发送 `小祥下本 <JM号>`。
+   - **文字搜本**：`小祥搜本 <关键词>` 
+   - **识图搜本**：引用一张图片，发送 `小祥找本`
+   - **下载本子**：引用搜本结果发送 `小祥下本`；或直接发送 `小祥下本 <JM号>`
 
-## ⚙️ 配置说明 (WebUI)
+## ⚠️ 重要注意事项
 
-- **基础设置**：指令别名设置、下本功能开关、超时时间设置。
-- **权限拦截**：
-  - `启用私聊白名单`：开启后，不在名单内的用户将被直接拦截（不走大模型，直接文字提示）。
-  - `私聊白名单`：填写允许使用的 QQ 号。
-  - `禁用群号`：在此群中所有功能失效，并通过大模型进行拒绝。
-- **AI 场景提示词**：
-  - 包含：禁用群搜本、禁用群识图、禁用群下本、下载功能被关闭。
-  - 注意事项：此处只需客观描述“发生了什么”，AI 会**自动套用你当前在 AstrBot 中配置的人格（Persona）**进行回复。
-
-## ⚠️ 重要注意事项（必读）
-
-1. **为什么本子不直接发在群聊，而是发私聊/临时会话？**
-   - **规避腾讯极高强度的群聊风控**。短时间内发送大量图片极易触发拦截，导致机器人被禁言甚至封号，通过私发/临时会话能最大程度保证机器人的存活与消息送达率。
-
-2. **临时会话限制**：下本功能采用的是**“群聊触发 -> 拉取群临时会话私发”**的模式。**机器人所在的群聊必须允许开启临时会话权限**，且你最好没有关闭接收陌生人消息。如果群主/管理员限制了临时会话，或者你屏蔽了群临时消息，机器人将无法把本子私发给你。
-
-3. **协议端防吞**：临时会话（非好友私聊）受腾讯风控极严。本插件已通过“文字预热 + 本地路径读取 + 合并转发”尽最大努力防吞包。但强烈建议**将机器人添加为好友**，好友私聊的稳定性和风控容忍度远高于临时会话。
-
-4. **识图搜本**：若 Soutubot 识图接口不可用，识图功能会提示失败，文字搜本和下本不受影响。
+> 1. **为什么本子不直接发在群聊，而是发私聊/临时会话？**
+>    为了**规避腾讯极高强度的群聊风控**。短时间内发送大量图片极易触发拦截，导致机器人被禁言甚至封号。同时也能防止刷屏和群内“社死”。
+> 2. **临时会话限制**：下本功能采用“群聊触发 -> 拉取群临时会话私发”模式。**机器人所在的群聊必须允许开启临时会话权限**，否则将无法发送。
+> 3. **协议端防吞**：临时会话受腾讯风控极严。强烈建议**将机器人添加为好友**，好友私聊的稳定性和风控容忍度远高于临时会话。
+> 4. **识图接口**：若 Soutubot 接口不可用，识图功能会提示失败，文字搜本和下本不受影响。
 
 ## 🔗 核心依赖与资源
 
@@ -100,4 +108,4 @@
 > 1. 本插件**仅供小范围个人学习与娱乐享受**，严禁用于任何商业用途、倒卖或大规模公开滥用。
 > 2. 使用本插件产生的一切**法律后果**与连带责任（包括但不限于因滥用导致的法律纠纷、以及 QQ 账号被风控、封禁、群聊被解散等），均由使用者自行承担。作者不对任何因使用或滥用本插件而引起的任何直接或间接的损失负责。
 
-*PS：以上部分内容由 DeepSeek 生成，我又懒得拢了。*
+*PS：以上部分内容由 DeepSeek 生成，我懒得弄了。*
