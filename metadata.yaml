@@ -4,6 +4,9 @@ desc: 基于 AstrBot 的 JM 搜本/下本插件，支持识图找本、临时会
 version: v1.0.0
 author: 蓝色健达奇趣蛋
 repo: https://github.com/Maledog91/astrbot_jm_new
+icon: https://raw.githubusercontent.com/Maledog91/astrbot_jm_new/main/logo.png
+platform:
+  - QQ
 tags:
   - jm
   - 搜本
