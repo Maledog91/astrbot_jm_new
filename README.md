@@ -7,18 +7,18 @@
 
   <br>
 
-  <!-- 徽章墙 - 第一层 -->
+  <!-- 徽章墙 - 第一层 (已添加点击跳转) -->
   <p>
-    <img src="https://img.shields.io/badge/AstrBot-Plugin-orange?style=flat-square" alt="AstrBot">
-    <img src="https://img.shields.io/badge/Python-3.10+-blue?style=flat-square&logo=python&logoColor=white" alt="Python">
-    <img src="https://img.shields.io/badge/Core-JMComic-red?style=flat-square" alt="JMComic">
+    <a href="https://github.com/AstrBotDevs/AstrBot" target="_blank"><img src="https://img.shields.io/badge/AstrBot-Plugin-orange?style=flat-square" alt="AstrBot"></a>
+    <a href="https://www.python.org/" target="_blank"><img src="https://img.shields.io/badge/Python-3.10+-blue?style=flat-square&logo=python&logoColor=white" alt="Python"></a>
+    <a href="https://github.com/hect0x7/JMComic-Crawler-Python" target="_blank"><img src="https://img.shields.io/badge/Core-JMComic-red?style=flat-square" alt="JMComic"></a>
   </p>
 
-  <!-- 徽章墙 - 第二层 -->
+  <!-- 徽章墙 - 第二层 (已添加点击跳转) -->
   <p>
-    <img src="https://img.shields.io/badge/Version-v1.0.0-green?style=flat-square" alt="Version">
-    <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="License"></a>
-    <img src="https://img.shields.io/badge/Status-Beta-yellow?style=flat-square" alt="Status">
+    <a href="https://github.com/Maledog91/astrbot_jm_new/releases" target="_blank"><img src="https://img.shields.io/badge/Version-v1.0.0-green?style=flat-square" alt="Version"></a>
+    <a href="./LICENSE" target="_blank"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="License"></a>
+    <a href="https://github.com/Maledog91/astrbot_jm_new" target="_blank"><img src="https://img.shields.io/badge/Status-Beta-yellow?style=flat-square" alt="Status"></a>
   </p>
 
   <br>
@@ -72,10 +72,10 @@
 ## ⚠️ 重要注意事项
 
 > 1. **为什么本子不直接发在群聊，而是发私聊/临时会话？**
->    为了**规避腾讯极高强度的群聊风控**。短时间内发送大量图片极易触发拦截，导致机器人被禁言甚至封号。同时也能防止刷屏和群内“社死”。
-> 2. **临时会话限制**：下本功能采用“群聊触发 -> 拉取群临时会话私发”模式。**机器人所在的群聊必须允许开启临时会话权限**，否则将无法发送。
-> 3. **协议端防吞**：临时会话受腾讯风控极严。强烈建议**将机器人添加为好友**，好友私聊的稳定性和风控容忍度远高于临时会话。
-> 4. **识图接口**：若 Soutubot 接口不可用，识图功能会提示失败，文字搜本和下本不受影响。
+为了**规避腾讯极高强度的群聊风控**。短时间内发送大量图片极易触发拦截，导致机器人被禁言甚至封号。同时也能防止刷屏。
+> 3. **临时会话限制**：下本功能采用“群聊触发 -> 拉取群临时会话私发”模式。**机器人所在的群聊必须允许开启临时会话权限**，否则将无法发送。
+> 4. **协议端防吞**：临时会话受腾讯风控极严。强烈建议**将机器人添加为好友**，好友私聊的稳定性和风控容忍度远高于临时会话。
+> 5. **识图接口**：若 Soutubot 接口不可用，识图功能会提示失败，文字搜本和下本不受影响。
 
 ## 🔗 核心依赖与资源
 
@@ -108,4 +108,4 @@
 > 1. 本插件**仅供小范围个人学习与娱乐享受**，严禁用于任何商业用途、倒卖或大规模公开滥用。
 > 2. 使用本插件产生的一切**法律后果**与连带责任（包括但不限于因滥用导致的法律纠纷、以及 QQ 账号被风控、封禁、群聊被解散等），均由使用者自行承担。作者不对任何因使用或滥用本插件而引起的任何直接或间接的损失负责。
 
-*PS：以上部分内容由 DeepSeek 生成，我懒得弄了。*
+*PS：以上部分内容由 DeepSeek 生成，我又懒得拢了。*
