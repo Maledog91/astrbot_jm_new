@@ -1,14 +1,22 @@
-# 🔗 小祥找本 (AstrBot 插件)
-
 <div align="center">
-  <img src="./logo.png" width="220" alt="小祥找本 Logo" style="border-radius: 15px;">
+  <img src="./logo.png" width="180" alt="小祥找本 Logo" style="border-radius: 20px;">
+  <h1>小祥找本 (AstrBot 插件)</h1>
+  
+  <!-- 小徽章区域 -->
+  <p>
+    <a href="https://github.com/Maledog91/astrbot_jm_new/stargazers"><img src="https://img.shields.io/github/stars/Maledog91/astrbot_jm_new?style=for-the-badge&logo=github&color=gold" alt="Stars"></a>
+    <a href="https://github.com/Maledog91/astrbot_jm_new/network/members"><img src="https://img.shields.io/github/forks/Maledog91/astrbot_jm_new?style=for-the-badge&logo=github" alt="Forks"></a>
+    <img src="https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+    <a href="./LICENSE"><img src="https://img.shields.io/github/license/Maledog91/astrbot_jm_new?style=for-the-badge" alt="License"></a>
+    <img src="https://img.shields.io/badge/AstrBot-Plugin-orange?style=for-the-badge" alt="AstrBot">
+  </p>
+
+  <p><strong>版本：v1.0.0</strong></p>
 </div>
 
-<div align="center">
-  <strong>版本：v1.0.0</strong>
-</div>
+**小祥找本** 是一款基于 [AstrBot](https://github.com/AstrBotDevs/AstrBot) 框架，并**深度依赖 [JMComic-Crawler-Python](https://github.com/hect0x7/JMComic-Crawler-Python) 官方底层库**开发的禁漫（JM）搜本、下本插件。
 
-基于 AstrBot 框架和 `jmcomic` 库开发的禁漫（JM）搜本、下本插件。支持深度定制的人格拒绝提示、防封控发送、多章节合并转发以及精准的识图搜本。
+支持深度定制的人格拒绝提示、防封控发送、多章节合并转发以及精准的识图搜本。
 
 ## ✨ 功能特性
 
@@ -53,18 +61,26 @@
 ## ⚠️ 重要注意事项（必读）
 
 1. **为什么本子不直接发在群聊，而是发私聊/临时会话？**
-**规避腾讯极高强度的群聊风控**。短时间内发送大量图片极易触发拦截，导致机器人被禁言甚至封号，通过私发/临时会话能最大程度保证机器人的存活与消息送达率。
+   - **规避腾讯极高强度的群聊风控**。短时间内发送大量图片极易触发拦截，导致机器人被禁言甚至封号，通过私发/临时会话能最大程度保证机器人的存活与消息送达率。
 
 2. **临时会话限制**：下本功能采用的是**“群聊触发 -> 拉取群临时会话私发”**的模式。**机器人所在的群聊必须允许开启临时会话权限**，且你最好没有关闭接收陌生人消息。如果群主/管理员限制了临时会话，或者你屏蔽了群临时消息，机器人将无法把本子私发给你。
 
 3. **协议端防吞**：临时会话（非好友私聊）受腾讯风控极严。本插件已通过“文字预热 + 本地路径读取 + 合并转发”尽最大努力防吞包。但强烈建议**将机器人添加为好友**，好友私聊的稳定性和风控容忍度远高于临时会话。
 
-4. **识图搜本**：若识图接口不可用，识图功能会提示失败，文字搜本和下本不受影响。
+4. **识图搜本**：若 Soutubot 识图接口不可用，识图功能会提示失败，文字搜本和下本不受影响。
+
+## 🔗 核心依赖与资源
+
+| 资源 | 说明 |
+| :--- | :--- |
+| **[JMComic-Crawler-Python](https://github.com/hect0x7/JMComic-Crawler-Python)** | **本项目核心依赖库，所有 JM 接口、下载与解析功能的上游** |
+| [AstrBot 官方文档](https://astrbot.soulter.top/) | 机器人框架使用与配置指南 |
+| [Soutubot](https://soutubot.moe/) | 提供免费的图片搜索接口 |
 
 ## 🙏 致谢
 
 - 感谢 **路过的复读姬** 和 **谷Eileen** 提供的技术与灵感。
-- 感谢 [JMComic-Crawler-Python](https://github.com/hect0x7/JMComic-Crawler-Python) 提供的强大底层 API 支持。
+- **特别感谢 [JMComic-Crawler-Python](https://github.com/hect0x7/JMComic-Crawler-Python) 提供的极其强大且稳定的底层 API 支持，没有这个库，本插件根本无法运行。**
 
 ## 📝 更新日志
 
