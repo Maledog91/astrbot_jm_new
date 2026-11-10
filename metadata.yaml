@@ -5,7 +5,6 @@ desc: 支持识图与文字搜本的 JM 插件，具备临时会话防风控私�
 version: v1.0.0
 author: 蓝色健达奇趣蛋
 repo: https://github.com/Maledog91/astrbot_jm_new
-astrbot_version: ">=4.0.0"
 support_platforms:
   - aiocqhttp
 tags:
