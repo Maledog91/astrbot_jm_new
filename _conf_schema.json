@@ -1,0 +1,62 @@
+{
+  "image_cmd": {
+    "description": "识图找本指令",
+    "type": "string",
+    "default": "小祥找本"
+  },
+  "text_cmd": {
+    "description": "文字搜本指令",
+    "type": "string",
+    "default": "小祥搜本"
+  },
+  "download_cmd": {
+    "description": "下载本子指令",
+    "type": "string",
+    "default": "小祥下本"
+  },
+  "enable_download": {
+    "description": "下本功能总开关",
+    "type": "bool",
+    "default": true
+  },
+  "enable_private_whitelist": {
+    "description": "启用私聊白名单（开启后，不在名单内的人将无法使用搜本、识图及下本）",
+    "type": "bool",
+    "default": true
+  },
+  "private_whitelist": {
+    "description": "私聊白名单（留空即放行所有人）",
+    "type": "list",
+    "default": []
+  },
+  "search_disabled_groups": {
+    "description": "禁用群号（在此群中，所有搜本、识图、下本功能都将被禁用）",
+    "type": "list",
+    "default": []
+  },
+  "scene_group_disabled_search": {
+    "description": "大模型场景：禁用群-文字搜本（直接发送给 AI，配合 AI 的人格设定）",
+    "type": "string",
+    "default": "有人试图在禁用的群聊里进行搜本，请拒绝他。"
+  },
+  "scene_group_disabled_image": {
+    "description": "大模型场景：禁用群-识图找本",
+    "type": "string",
+    "default": "有人试图在禁用的群聊里进行识图找本，请拒绝他。"
+  },
+  "scene_group_disabled_download": {
+    "description": "大模型场景：禁用群-下本",
+    "type": "string",
+    "default": "有人试图在禁用的群聊里进行下载，请拒绝他。"
+  },
+  "scene_download_disabled": {
+    "description": "大模型场景：下载功能关闭拦截",
+    "type": "string",
+    "default": "有人试图使用下载功能，但该功能已被管理员关闭，请拒绝他。"
+  },
+  "timeout": {
+    "description": "网络请求超时时间（秒）",
+    "type": "int",
+    "default": 30
+  }
+}
